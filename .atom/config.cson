@@ -1,0 +1,7 @@
+"*":
+  core: {}
+  editor:
+    invisibles: {}
+    tabLength: 4
+  welcome:
+    showOnStartup: false

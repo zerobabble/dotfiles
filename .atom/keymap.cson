@@ -1,0 +1,4 @@
+'body':
+  'ctrl-S': 'window:save-all'
+'atom-text-editor:not([mini])':
+  'ctrl-d': 'editor:delete-line'

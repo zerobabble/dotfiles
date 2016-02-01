@@ -1,0 +1,15 @@
+general {
+    colors = true
+    interval = 5
+}
+
+order += "cpu_usage"
+order += "time"
+
+cpu_usage {
+    format = "%usage"
+}
+
+time {
+format = "%d/%m/%Y %H:%M"
+}
