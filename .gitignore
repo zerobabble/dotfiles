@@ -1,0 +1,21 @@
+/Downloads
+/Pictures
+/VirtualBox VMs
+/.ssh/id_rsa*
+/.npm
+/*history
+/.atom
+/.Xauthority
+/.config/Atom
+/.config/Thunar
+/.config/VirtualBox
+/.config/chromium
+/.config/dconf
+/.config/gconf
+/.config/gtk-2.0
+/.config/gtk-3.0
+/.config/menus
+/.config/mimeapps.list
+/.config/nitrogen
+/.config/pulse
+/.config/spotify
