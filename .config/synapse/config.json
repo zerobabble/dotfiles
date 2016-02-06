@@ -1,0 +1,16 @@
+{
+  "ui" : {
+    "global" : {
+      "ui-type" : "default",
+      "show-indicator" : false
+    }
+  },
+  "data-sink" : {
+    "global" : {
+      "disabled-plugins" : [
+        "SynapseGnomeBookmarksPlugin",
+        "SynapseZeitgeistPlugin"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+#!/bin/python
+
+import imaplib, re, os
+from subprocess import Popen, DEVNULL
+
+gmail_user = os.getenv('GMAIL_USER')
+if os.getenv('BLOCK_BUTTON'):
+    Popen(['chromium', 'https://mail.google.com/mail/u/?authuser=%s@gmail.com' % gmail_user], stdout=DEVNULL, stderr=DEVNULL)
+conn = imaplib.IMAP4_SSL("imap.gmail.com", 993)
+conn.login(gmail_user, os.getenv('GMAIL_PASS'))
+mail_status = conn.status("INBOX", "(UNSEEN)")[1][0].decode('UTF-8')
+print(re.search("UNSEEN (\d+)", mail_status).group(1))

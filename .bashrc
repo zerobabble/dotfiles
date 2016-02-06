@@ -8,5 +8,4 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-xrdb -merge .Xresources
 startx
