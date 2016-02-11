@@ -1,0 +1,26 @@
+command=~/.config/i3blocks/scripts/$BLOCK_NAME
+separator_block_width=10
+markup=pango
+separator=true
+
+[gmail]
+label=G:
+interval=300
+
+[cpu_usage]
+label=P:
+interval=10
+
+[memory]
+label=M:
+interval=10
+
+[volume]
+label=♪:
+command=amixer get Master | grep -E -o '[0-9]{1,3}?%' | head -1
+interval=once
+signal=1
+
+[time]
+command=date '+%d/%m/%Y %R'
+interval=60

@@ -1,6 +1,7 @@
 "*":
   core: {}
   editor:
+    fontFamily: "Sauce Code Powerline"
     invisibles: {}
     tabLength: 4
   welcome:
